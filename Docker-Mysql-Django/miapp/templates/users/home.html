@@ -1,0 +1,33 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} Home {% endblock  %}
+{% load static %}
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success">
+                {{message}}
+            </div>
+        {% endfor %}
+    {% else %}
+    {% endif %}
+    {% if user.username %}
+        <h1 class="title">HOME</h1>
+        <hr/>
+        <h2>Bienvenido, {{request.user.username}}</h2>
+        <br>
+        <h4>Seguridad de la pagina:</h4>
+        <ul>
+            <li>La contraceña caduca cada 30 dias.</li>
+            <li>Pasado el periodo se pierde acceso a la cuenta, hasta que un administrador se la habilite.</li>
+        </ul>
+    {% else %}
+        <h1 class="title">WordCloud</h1>
+        <hr/>
+        <img src="{% static 'image/kid_chosun_image.png' %}">
+        <img src="{% static 'image/sojoong_image.png' %}">
+        <img src="{% static 'image/econoi_image.png' %}">
+
+    {% endif %}
+    
+{% endblock  %}

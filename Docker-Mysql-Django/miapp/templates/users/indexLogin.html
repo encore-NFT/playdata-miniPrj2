@@ -1,0 +1,30 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} Login De Usuario {% endblock  %}
+
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning">
+                {{message}}
+            </div>
+        {% endfor %}
+    {% else %}
+    {% endif %}
+
+    <h1 class="title">Login</h1>
+    <hr/>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label>Username: </label>
+        <input type="text" name="username">
+        <label>Contraseña: </label>
+        <input type="password" name="password">
+        <input type="submit" value="LogIn">
+        <p class="pass">Olvido su Contraseña <a href="{% url 'password_reset' %}"><b>click aquí</a></b></p>
+    </form>
+    
+
+{% endblock  %}
+
+

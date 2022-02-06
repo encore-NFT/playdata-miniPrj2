@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    </head>
+    <body>
+    <!-- Header Section Begin -->
+        <header>
+            <div id="logo">
+                <img src="{% static 'image/image_logo.png' %}">
+
+                <!-- <h1>NFT</h1> -->
+            </div>
+        </header>
+    <!-- Header Section End -->
+
+    <!-- Navegation Section Begin -->
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Main</a></li>
+                {% if user.username %}
+                    <li><a href="{% url 'password_change' %}">Cambio De Contraseña</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'indexLogin' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="bar">
+            <span class="cornerLeft"></span>
+            <span class="barFiller"></span>
+            <span class="cornerRight"></span>
+        </div>
+    <!-- Navegation Section End -->
+  
+    <!-- Content Section Begin -->
+        <div id="content">
+            <div class="box">
+                {% block content %}
+                {% endblock %}
+            </div>           
+        </div>
+    <!-- Content Section End -->
+
+    <!-- Footer Section Begin -->
+        <footer>
+            <div>WordCloud Django &copy; NFT - {% now "Y" %}</div>  
+        </footer>
+    <!-- Footer Section End -->
+    </body>
+</html>

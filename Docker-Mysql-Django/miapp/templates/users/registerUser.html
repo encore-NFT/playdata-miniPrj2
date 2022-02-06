@@ -1,0 +1,25 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} NFT Team Mini Project {% endblock %}
+
+{% block content %}
+
+    <h1 class="title">test</h1>
+    <hr/>
+    {{register_Form.errors}}
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% comment %}
+            {{register_Form.as_p}}
+        {% endcomment %}
+        
+        {% for field in register_Form %}
+            <label>{{field.label}}</label>
+            {{field}}
+        {% endfor %}
+
+        <input type="submit" value="Registrarse">
+    </form>
+    
+{% endblock  %}
