@@ -32,9 +32,9 @@
 ### 💡 개발 환경 & 기술 스택
 
 <p>
-OS : <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=macOS&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/Debian-A5915F?style=flat-square&logo=Debian&logoColor=white"/></br>
+OS : <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=macOS&logoColor=white"/> <img src="https://img.shields.io/badge/Debian-A5915F?style=flat-square&logo=Debian&logoColor=white"/></br>
 Communication : <img src="https://img.shields.io/badge/Slack-4A154B?style=&logo=Slack&logoColor=white"/> <img src="https://img.shields.io/badge/Zoom-2D8CFF?style=flat-square&logo=Zoom&logoColor=white"/> </br>
-Tools : <img src="https://img.shields.io/badge/Visual Studio-007ACC?style=flat-square&logo=Visual Studio&logoColor=white"/> </br>
+Tools : <img src="https://img.shields.io/badge/Visual Studio-007ACC?style=flat-square&logo=Visual Studio&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/></br>
 </p>
 <p>
 DB : <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"/> </br>
@@ -52,7 +52,7 @@ Web Crawling : <img src="https://img.shields.io/badge/Python-3766AB?style=flat-s
 
 </br>
 
-### Date Flow
+### Data Flow
 
 ![캡처2](https://user-images.githubusercontent.com/44595181/152994049-20c85dab-3960-44af-8327-09657f1e5540.PNG)
 
